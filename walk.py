@@ -13,12 +13,12 @@ def randomCrossing(timeSeries):
             crossingSeries[x] = 1
     return crossingSeries
 
-def plotRandomWalkXT(N=100000):
+def plotRandomWalkXT(N=1000000):
     X = randomWalk(N,1)
     plt.plot(X)
     plt.show()
 
-def plotCrossingXT(N=100000):
+def plotCrossingXT(N=1000000):
     X = randomWalk(N,1)
     crossings = randomCrossing(X)
     plt.plot(crossings)
